@@ -1,0 +1,188 @@
+/* Cores,la Fundo Página: #EEEEEE/ Nav bar: #373A40/ Footer: #DC5F00/ Card: #f9f9f5*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pixelify Sans", sans-serif;
+  font-style: normal;
+}
+
+header {
+  padding: 16px 0;
+  background-color: #373a40;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  color: #fff;
+  font-size: 24px;
+}
+
+header nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header img {
+  height: 62px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main,
+.sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container,
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li a:hover {
+  color: #dc5f00;
+}
+
+.album .card img {
+  height: 260px;
+  margin-top: 12px;
+}
+
+.album {
+  margin-top: 32px;
+  margin-left: 56px;
+  margin-right: 32px;
+  padding: 2px 16px;
+  box-shadow: -24px 8px 2px 2px rgb(0 0 0 / 20%);
+  border-radius: 10px 10px;
+  height: 400px;
+  width: 500px;
+  background-color: #f9f9f5;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.text-title {
+  margin-left: 16px;
+}
+
+.vynil {
+  margin-top: 200px;
+}
+
+.vynil img {
+  width: 200px;
+}
+
+.aboutus {
+  font-size: 3rem;
+  margin-bottom: 240px;
+  margin-right: 190px;
+}
+
+.rec img {
+  height: 240px;
+}
+
+.rec {
+  margin-left: 160px;
+}
+
+.rec h2 {
+  font-size: 3rem;
+}
+
+.card-r {
+  position: absolute;
+  left: 950px;
+  bottom: 5px;
+}
+
+.card-r p {
+  margin-top: 32px;
+}
+
+.vynil img {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pointing img {
+  animation: jump 2s linear infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+form input {
+  padding: 4px 12px;
+  border-radius: 12px 12px;
+  border-style: none;
+}
+
+form input:focus {
+  outline-color: #dc5f00;
+}
+
+form button {
+  padding: 4px 12px;
+  border-radius: 12px 12px;
+  border-style: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #373a40;
+  color: #dc5f00;
+}
+
+footer {
+  background-color: #dc5f00;
+  color: #f9f9f5;
+  padding: 16px;
+}
